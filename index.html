@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hsuan-Hui Yi</title>
+
+  <!-- Mono for titles/metadata -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for star icon -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <h1 class="hero-name">Hsuan-Hui Yi</h1>
+      <p class="hero-intro">
+        Hi, my friends call me Vankley.<br>
+        I build interactive devices that bring together sensing, haptics, and human experience.
+      </p>
+      <a class="hero-scroll" href="#projects">Scroll ↓</a>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <main class="wrap" id="projects">
+    <!-- <div class="section-head">
+      <h2 class="section-title">Projects</h2>
+    </div> -->
+
+    <section class="grid" id="projectGrid" aria-label="Project list"></section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay" aria-label="Close overlay"></div>
+
+    <article class="modal-card" role="dialog" aria-modal="true">
+  <button class="modal-close" id="modalClose">✕</button>
+
+  <div class="modal-body" id="modalBody">
+    <h3 class="modal-title" id="modalTitle"></h3>
+
+    <div class="chips" id="modalChips"></div>
+
+    <p class="modal-desc" id="modalDesc"></p>
+
+    <!-- images will be injected here -->
+    <div class="modal-gallery" id="modalGallery"></div>
+
+    <div class="modal-sections" id="modalSections"></div>
+  </div>
+</article>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
